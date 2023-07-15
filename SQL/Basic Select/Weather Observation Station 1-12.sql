@@ -25,6 +25,7 @@ WHERE id%2=0;
     of distinct CITY entries in the table.The STATION table is described as follows:
 
 Link : https://www.hackerrank.com/challenges/weather-observation-station-4/problem?isFullScreen=true
+
 */
 
 SELECT count(city)-count(DISTINCT city)
