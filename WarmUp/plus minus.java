@@ -1,4 +1,10 @@
-public import java.io.*;
+
+// plus Minus
+
+// Link : https://www.hackerrank.com/challenges/plus-minus/problem?isFullScreen=true
+
+
+import java.io.*;
 import java.math.*;
 import java.security.*;
 import java.text.*;
@@ -37,9 +43,15 @@ class Result {
             }
         }
         
-        System.out.format("%.6f",positive/arr.size());
-        System.out.format("%.6f",negative/arr.size());
-        System.out.format("%.6f",zero/arr.size());
+        
+        System.out.format("%.6f", positive/(double)arr.size());
+        System.out.println();
+        
+        System.out.format("%.6f", negative/(double)arr.size());
+        System.out.println();
+        
+        System.out.format("%.6f", zero/(double)arr.size());
+        System.out.println();
     }
 
 }
@@ -58,7 +70,4 @@ public class Solution {
 
         bufferedReader.close();
     }
-}
- {
-    
 }
