@@ -67,3 +67,17 @@ LIMIT 1;
 SELECT DISTINCT city
 FROM station
 WHERE LEFT(city,1) IN ('a','e','i','o','u');
+
+
+/*
+ 7. Query the list of CITY names ending with vowels (a, e, i, o, u) 
+ from STATION. 
+ Your result cannot contain duplicates.
+
+ Link : https://www.hackerrank.com/challenges/weather-observation-station-7/problem?isFullScreen=true
+
+*/
+
+SELECT DISTINCT city
+FROM station
+where RIGHT(city,1) IN ('a','e','i','o','u');
