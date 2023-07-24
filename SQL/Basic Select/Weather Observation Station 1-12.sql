@@ -95,3 +95,17 @@ where RIGHT(city,1) IN ('a','e','i','o','u');
 SELECT DISTINCT city
 FROM station
 WHERE LEFT(city,1) IN ('a','e','i','o','u') AND RIGHT(city,1) IN ('a','e','i','o','u');
+
+
+/*
+ 9. Weather Observation Station 9
+
+    Query the list of CITY names from STATION that do not start with vowels. 
+    Your result cannot contain duplicates.
+
+    Link : https://www.hackerrank.com/challenges/weather-observation-station-9/problem?isFullScreen=true
+*/
+
+SELECT DISTINCT city
+FROM station
+where LEFT(city,1) NOT IN ('a','e','i','o','u');
